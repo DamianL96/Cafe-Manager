@@ -1,0 +1,202 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 5px;
+  background-color: #37489e;
+} 
+h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+.contenedor-balance {
+  display: flex;
+  width: 90%;
+  margin: 15px auto; 
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+section {
+  background-color: #fff;
+  margin: 10px;
+  border: 1px solid #d3cbcb;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+h2 {
+  margin: 5px;
+  font-size: 25px;
+  color: #fff;
+  background-color: #3498db;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+h2:hover {
+  background-color: #2980b9;
+}
+
+#gastos {
+  flex: 1 0 40%;
+}
+
+#ventasDia {
+  flex: 1 0 40%;
+}
+
+#balance {
+  flex: 1 0 80%;
+}
+
+#gastos form {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  border-radius: 5px;
+  margin-left: 0;
+}
+
+.ingreso{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#gastos input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+
+}
+
+#gastos input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+#total p {
+  font-weight: 400;
+}
+
+
+section:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.abrirCaja {
+  display: inline-block;
+  width: 200px;
+  padding: 10px;
+  margin: 0 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.abrirCaja:hover {
+  background-color: #45a049;
+}
+
+
+.cerrarCaja {
+  display: inline-block;
+  width: 200px;
+  padding: 10px;
+  margin: 0 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f44336;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cerrarCaja:hover {
+  background-color: #d32f2f;
+  animation: pulse 1s infinite;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+#balance{
+  display: flex;
+  flex-direction: column;
+}
+
+.datos{
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.abrirCaja .cerrarCaja {
+  display: block;
+  margin: 10px auto;
+}
+
+
+@media only screen and (max-width: 750px) {
+
+  main {
+    display: block;
+  }
+
+  #gastos input {
+    width: 70vw;
+    margin-bottom: 10px;
+  }
+
+  .datos{
+    flex-direction: column;
+  }
+}
