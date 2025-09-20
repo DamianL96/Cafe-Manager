@@ -3,6 +3,8 @@
 Aplicación web ligera en **HTML, CSS y JavaScript** para la gestión de ventas en restaurantes y bares.  
 Permite manejar **mesas**, **ventas en barra**, **balance de caja** y **carga de productos** de manera sencilla, sin necesidad de backend (usa **LocalStorage** como almacenamiento).  
 
+![Captura de cafe](captura-cafe.png).
+
 ## 📑 Tabla de Contenidos
 - [Características](#características)  
 - [Estructura del Proyecto](#estructura-del-proyecto)  
