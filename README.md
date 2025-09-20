@@ -38,7 +38,8 @@ project/
 │── scripts/
 │   ├── mesas.js        # Lógica de mesas
 │   ├── barra.js        # Lógica de barra
-│   ├── balance.js      # Lógica de balance
+│   ├── balance.js
+|   ├── footer.js       # Lógica de footer
 │── css/                # Estilos (normalize, generales y específicos)
 │── img/                # Imágenes y logo
 └── db/
@@ -97,15 +98,6 @@ No requiere instalación compleja.
 - **Estilos base:** `normalize.css` y hojas personalizadas.  
 
 ---
+ 
 
-## 🤝 Contribución
-1. Haz un fork del proyecto.  
-2. Crea una rama (`git checkout -b feature/nueva-funcionalidad`).  
-3. Realiza cambios y haz commit (`git commit -m "Agrego nueva funcionalidad"`).  
-4. Sube tu rama (`git push origin feature/nueva-funcionalidad`).  
-5. Abre un Pull Request.  
 
----
-
-## 📄 Licencia
-Este proyecto está bajo la licencia **MIT**.  
